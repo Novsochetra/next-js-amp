@@ -1,7 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useAmp } from "next/amp";
 import styles from "../styles/Home.module.css";
 import AmpCard from "../src/components/AmpCard";
+
+export const config = {
+  amp: "hybrid",
+};
 
 export default function Home() {
   return (
