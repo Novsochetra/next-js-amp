@@ -2,6 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  experimental: {
+    amp: {
+      skipValidation: true,
+    },
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
